@@ -52,7 +52,7 @@ public class DalController implements MrsDalInterface
         try
         {
             return movieRepo.getAllMovies();
-        } catch (IOException ex)
+        } catch (MrsDalException ex)
         {
             throw new MrsDalException("Could not get all movies", ex);
         }
